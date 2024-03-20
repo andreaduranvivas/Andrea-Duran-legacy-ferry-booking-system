@@ -158,12 +158,12 @@ Verificar que el sistema maneje correctamente el caso en que el viaje es nulo.
 ---
 ### Clase `JourneyBookingService`
 
-### Pruebas Existentes
+#### Pruebas Existentes
 
 - Verificación de disponibilidad para reservar un viaje.
 - Reserva de un viaje.
 
-### Pruebas Propuestas
+#### Pruebas Propuestas
 
 - **Prueba de Disponibilidad de Reserva con Viaje No Existente:** 
 Verificar que el sistema maneje correctamente el caso en que se intenta reservar un viaje que no existe.
@@ -187,13 +187,13 @@ en el ferry.
         }
     ```
 ---
-# Clase `PortManager`
+### Clase `PortManager`
 
-### Pruebas Existentes
+#### Pruebas Existentes
 
 - Obtener modelos de puertos con ferries asignados.
 
-### Pruebas Propuestas
+#### Pruebas Propuestas
 
 - **Prueba de Obtener Modelos de Puertos con Puertos y Ferries Nulos:** 
 Verificar que el sistema maneje correctamente el caso en que los puertos y ferries son nulos.
@@ -218,13 +218,13 @@ Verificar que el sistema maneje correctamente el caso en que los ferries no tien
     ```
 
 ---
-# Clase `Ports`
+### Clase `Ports`
 
-### Pruebas Existentes
+#### Pruebas Existentes
 
 - Carga de puertos desde archivo.
 
-### Pruebas Propuestas
+#### Pruebas Propuestas
 
 - **Prueba de Carga de Puertos con Archivo Vacío:** 
 Verificar que el sistema maneje correctamente un archivo vacío sin lanzar excepciones.
@@ -249,13 +249,13 @@ Verificar que el sistema maneje correctamente un archivo con JSON inválido, por
     ```
 
 ---
-# Clase `TimeTables`
+### Clase `TimeTables`
 
-### Pruebas Existentes
+#### Pruebas Existentes
 
 - Carga de horarios desde archivo.
 
-### Pruebas Propuestas
+#### Pruebas Propuestas
 
 - **Prueba de Carga de Horarios con Archivo Vacío:** 
 Verificar que el sistema maneje correctamente un archivo vacío sin lanzar excepciones.
@@ -280,14 +280,14 @@ Verificar que el sistema maneje correctamente un archivo con JSON inválido, por
     ```
 
 ---
-## Clase `TimeTableService`
+### Clase `TimeTableService`
 
-### Pruebas Existentes
+#### Pruebas Existentes
 
 - Obtener horario de viajes.
 - Obtener cruces disponibles.
 
-### Pruebas Propuestas
+#### Pruebas Propuestas
 
 - **Prueba de Obtener Horario de Viajes con Puertos Nulos:** 
 Verificar que el sistema maneje correctamente el caso en que los puertos son nulos.
