@@ -165,7 +165,7 @@ public class Program {
 
     private static void book(String line) {
         try {
-            String parts[] = line.split(" ");
+            String[] parts = line.split(" ");
             int journeyId = Integer.parseInt(parts[1]);
             int passengers = Integer.parseInt(parts[2]);
 
@@ -188,10 +188,10 @@ public class Program {
 
     private static void search(String line) {
         try {
-            String parts[] = line.split(" ");
+            String[] parts = line.split(" ");
             int originPortId = Integer.parseInt(parts[1]);
             int destinationPortId = Integer.parseInt(parts[2]);
-            String mins[] = parts[3].split(":");
+            String[] mins = parts[3].split(":");
             long time = Long.parseLong(mins[0]) * 60 + Long.parseLong(mins[1]);
 
             List<AvailableCrossing> search = timeTableService.getAvailableCrossings(time, originPortId,

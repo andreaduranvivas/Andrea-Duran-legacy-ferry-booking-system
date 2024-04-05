@@ -15,8 +15,8 @@ import java.util.List;
 
 public class JourneyBookingService {
 
-    private TimeTables timeTables;
-    private Bookings bookings;
+    private final TimeTables timeTables;
+    private final Bookings bookings;
     private final FerryAvailabilityService ferryService;
 
     public JourneyBookingService(TimeTables timeTables, Bookings bookings, FerryAvailabilityService ferryService) {
