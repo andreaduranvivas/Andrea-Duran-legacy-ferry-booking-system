@@ -42,7 +42,7 @@ public class SaffSqueeze {
                 + "| 00:25    | Port Ellen    | 00:45         | Dreadnaught        | 01:10    |\n"
                 + "| 00:40    | Mos Eisley    | 00:35         | Defiant            | 01:15    |\n"
                 + "| 01:25    | Port Ellen    | 00:45         | Hyperion           | 02:10    |\n"
-                + "| 01:40    | Mos Eisley    | 00:35         | Black Pearl        | 02:15    |\n" + "";
+                + "| 01:40    | Mos Eisley    | 00:35         | Black Pearl        | 02:15    |\n";
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         PrintStream ps = new PrintStream(baos);
         Program.start(ps);
