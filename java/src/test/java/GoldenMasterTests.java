@@ -12,8 +12,7 @@ import org.junit.Test;
 import util.Program;
 
 public class GoldenMasterTests {
-
-    //@Test
+    @Test
     public void generate_golden_master() {
         WriteToFile("master.txt");
     }

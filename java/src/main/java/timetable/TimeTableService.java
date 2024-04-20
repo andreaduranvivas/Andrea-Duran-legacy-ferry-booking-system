@@ -31,13 +31,7 @@ public class TimeTableService {
         for (TimeTable tt : timetables) {
             allEntries.addAll(tt.entries);
         }
-        Collections.sort(allEntries, new Comparator<TimeTableEntry>() {
-
-            @Override
-            public int compare(TimeTableEntry tte1, TimeTableEntry tte2) {
-                return Long.compare(tte1.time, tte2.time);
-            }
-        });
+        allEntries.sort((tte1, tte2) -> Long.compare(tte1.time, tte2.time));
 
         List<TimeTableViewModelRow> rows = new ArrayList<TimeTableViewModelRow>();
 
@@ -75,13 +69,7 @@ public class TimeTableService {
         for (TimeTable tt : timetables) {
             allEntries.addAll(tt.entries);
         }
-        Collections.sort(allEntries, new Comparator<TimeTableEntry>() {
-
-            @Override
-            public int compare(TimeTableEntry tte1, TimeTableEntry tte2) {
-                return Long.compare(tte1.time, tte2.time);
-            }
-        });
+        allEntries.sort((tte1, tte2) -> Long.compare(tte1.time, tte2.time));
 
         List<AvailableCrossing> result = new ArrayList<AvailableCrossing>();
 
