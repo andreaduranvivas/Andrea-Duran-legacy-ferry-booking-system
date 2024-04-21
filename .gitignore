@@ -12,3 +12,4 @@ C-Sharp/FerryLegacy/obj
 
 # Ignore Gradle build output directory
 build
+/java/gradle/

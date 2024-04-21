@@ -1,12 +1,9 @@
 package util;
 
-
-import org.apache.commons.io.IOUtils;
-
-import java.io.IOException;
+import java.util.Objects;
 
 public class Util {
-    public static String readFileToString(String path) throws IOException {
-        return IOUtils.toString(Thread.currentThread().getClass().getResourceAsStream(path));
+    public static String readFileToString(String path) {
+        return (Objects.requireNonNull(Thread.currentThread().getClass().getResourceAsStream(path))).toString();
     }
 }
